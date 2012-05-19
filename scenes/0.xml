@@ -11,9 +11,9 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="0" sx="1.0" sy="1.0" x="31" y="237" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="0" id="2" sx="1.0" sy="1.0" x="586" y="97" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="0" id="2" sx="1.0" sy="1.0" x="588" y="160" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="0" id="2" sx="1.0" sy="1.0" x="105" y="238" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="1" id="2" sx="1.0" sy="1.0" x="586" y="97" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="1" id="2" sx="1.0" sy="1.0" x="588" y="160" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="1" id="2" sx="1.0" sy="1.0" x="105" y="238" z="0"/>
     </actors>
     <snippets/>
     <terrain/>

@@ -12,8 +12,12 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_2" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" language="" name="ActorEvents_2" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <text default="default" desc="Sets the appearance of the block." dropdown="default&#10;red&#10;" fullname="appearance" hidden="false" id="1" name="_appearance" order="0"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_3_3_BlokMovement" desc="Moves block to the left side of the screen" description="Moves block to the left side of the screen" design="true" drawOrder="0" id="3" language="" name="Block Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
@@ -24,6 +28,8 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="4" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
     </snippet>
 </pack>

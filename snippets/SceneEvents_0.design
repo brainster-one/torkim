@@ -1,2 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <ACTORTYPE eid="2" id="0"/>
+                    <int id="1" val="100"/>
+                    <int id="2" val="100"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <actor-set-prop comment="false" x="26" y="67">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="appearance"/>
+                    <int id="2" val="red"/>
+                </actor-set-prop>
+                <shout comment="false" x="26" y="94">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="appearance_change"/>
+                </shout>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
