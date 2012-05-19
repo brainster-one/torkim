@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="4" format="1.0" gravx="-0.0" gravy="0.0" height="384" id="0" name="First Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="255"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="0" sx="1.0" sy="1.0" x="29" y="238" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="2" sx="1.0" sy="1.0" x="586" y="97" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="2" sx="1.0" sy="1.0" x="588" y="160" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="2" sx="1.0" sy="1.0" x="586" y="290" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+</scene>

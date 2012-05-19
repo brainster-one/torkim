@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="moves block to the left side of the screen"/>
+                </comment-short>
+                <set-dxy comment="false" x="26" y="60">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="-2"/>
+                </set-dxy>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
