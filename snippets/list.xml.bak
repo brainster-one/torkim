@@ -2,7 +2,9 @@
 <pack>
     <snippet attachedevent="true" class="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="0" language="" name="ActorEvents_0" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_HeroMovement" desc="" description="" design="true" drawOrder="0" id="1" language="" name="Hero Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
@@ -30,6 +32,13 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_5_5_BlockFall" desc="" description="" design="true" drawOrder="0" id="5" language="" name="Block Fall" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
         </events>
     </snippet>
 </pack>

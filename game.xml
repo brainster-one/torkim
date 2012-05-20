@@ -4,8 +4,6 @@
     <packs/>
     <groups/>
     <cgroups>
-        <cgroup g1="1" g2="3"/>
-        <cgroup g1="1" g2="0"/>
         <cgroup g1="3" g2="3"/>
     </cgroups>
     <input>
@@ -15,7 +13,7 @@
         <key id="3" keyname="RIGHT" name="right" vk="39"/>
         <key id="4" keyname="Z" name="action1" vk="90"/>
         <key id="5" keyname="X" name="action2" vk="88"/>
-        <key id="6" keyname="ENTER" name="enter" vk="10"/>
+        <key id="6" keyname="SPACE" name="Jump" vk="32"/>
     </input>
     <attcats>
         <cat id="-1" name="Default"/>

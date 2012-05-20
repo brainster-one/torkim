@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <actor-set-prop comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="On Ground?"/>
+                    <int id="2" val="true"/>
+                </actor-set-prop>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <print comment="false" x="26" y="40">
+                    <get-frame comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                    </get-frame>
+                </print>
+                <comment-short comment="false" x="26" y="73">
+                    <int id="0" val="Call Jump"/>
+                </comment-short>
+                <if comment="false" x="26" y="93">
+                    <group eventID="-1" id="-1">
+                        <play-sound4 comment="false" x="37" y="136">
+                            <int id="0" val="0"/>
+                            <SOUND eid="var" id="1" vid="3"/>
+                        </play-sound4>
+                        <set-dxy comment="false" x="37" y="163">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <get-val-5-6 comment="false" id="2" x="0" y="0"/>
+                        </set-dxy>
+                        <comment-short comment="false" x="37" y="195">
+                            <int id="0" val="Time before recalling client to go down"/>
+                        </comment-short>
+                        <dolater comment="false" x="37" y="215">
+                            <group eventID="-1" id="-1">
+                                <set-dxy comment="false" x="48" y="242">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <get-val-5-7 comment="false" id="2" x="0" y="0"/>
+                                </set-dxy>
+                            </group>
+                            <int id="0" val="0.25"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <keystate comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <get-val-5-1 comment="false" id="1" x="0" y="0"/>
+                        </keystate>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="On Ground?"/>
+                            </actor-get-prop>
+                            <true comment="false" id="1" x="0" y="0"/>
+                        </eq>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
