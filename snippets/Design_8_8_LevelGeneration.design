@@ -16,6 +16,20 @@
                                         <int id="1" val="0"/>
                                     </get-xy>
                                 </set-val-8-3>
+                                <if comment="false" x="48" y="173">
+                                    <group eventID="1" id="-1">
+                                        <set-val-8-4 comment="false" x="59" y="203">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="1"/>
+                                            </get-xy>
+                                        </set-val-8-4>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-val-8-4 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </lesseq>
+                                </if>
                             </group>
                             <more comment="false" id="0" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -28,13 +42,13 @@
                     </group>
                     <ACTORTYPE eid="var" id="0" vid="1"/>
                 </actors-of-type3>
-                <create-actor3 comment="false" x="26" y="197">
+                <create-actor3 comment="false" x="26" y="277">
                     <ACTORTYPE eid="var" id="0" vid="1"/>
                     <plus comment="false" id="1" x="0" y="0">
                         <get-val-8-3 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="32"/>
                     </plus>
-                    <int id="2" val="100"/>
+                    <get-val-8-4 comment="false" id="2" x="0" y="0"/>
                     <int id="3" val="0"/>
                 </create-actor3>
             </group>
@@ -42,4 +56,24 @@
         </event-periodic>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-8-4 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-8-4 comment="false" id="0" x="0" y="0"/>
+                        <times comment="false" id="1" x="0" y="0">
+                            <randint comment="false" id="0" x="0" y="0">
+                                <int id="0" val="-1"/>
+                                <int id="1" val="1"/>
+                            </randint>
+                            <int id="1" val="32"/>
+                        </times>
+                    </plus>
+                </set-val-8-4>
+            </group>
+            <int id="0" val="1"/>
+        </event-periodic>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>

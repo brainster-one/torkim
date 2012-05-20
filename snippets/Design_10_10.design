@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<comment-short comment="false" x="26" y="40">
+<int id="0" val="Inputs:"/>
+</comment-short>
+<comment-short comment="false" x="26" y="60">
+<int id="0" val="None"/>
+</comment-short>
+<comment-short comment="false" x="26" y="80">
+<int id="0" val="Outputs:"/>
+</comment-short>
+<comment-short comment="false" x="26" y="100">
+<int id="0" val="&amp;quot;On Ground?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute"/>
+</comment-short>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="148">
+<group id="-1">
+<actor-set-prop comment="false" x="26" y="173">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+<get-val-10-1 comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+<set-val-10-1 comment="false" x="26" y="205">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-10-1>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="258">
+<group id="-1">
+<comment-short comment="false" x="26" y="283">
+<int id="0" val="Don&amp;#039;t consider collisions with sensors as hitting the ground"/>
+</comment-short>
+<if comment="false" x="26" y="303">
+<group id="-1">
+<stop comment="false" x="37" y="336"/>
+</group>
+<collision-sensor comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-sensor>
+</if>
+<comment-short comment="false" x="26" y="368">
+<int id="0" val="If we only want to detect collions with Tiles, and the Actor hit something other than the tile -- Quit"/>
+</comment-short>
+<if comment="false" x="26" y="388">
+<group id="-1">
+<stop comment="false" x="37" y="431"/>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<get-val-10-2 comment="false" id="0" x="0" y="0"/>
+<not comment="false" id="1" x="0" y="0">
+<collision-tile comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-tile>
+</not>
+</and>
+</if>
+<comment-short comment="false" x="26" y="463">
+<int id="0" val="If we are excluding certain Actor Groups - check those here and quit if appropriate"/>
+</comment-short>
+<if comment="false" x="26" y="483">
+<group id="-1">
+<for-each comment="false" x="37" y="518">
+<group id="-1">
+<if comment="false" x="48" y="543">
+<group id="-1">
+<stop comment="false" x="59" y="578"/>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<tostring comment="false" id="1" x="0" y="0">
+<collision-shape-group comment="false" id="0" x="0" y="0"/>
+</tostring>
+</eq>
+</if>
+</group>
+<get-val-10-3 comment="false" id="0" x="0" y="0"/>
+</for-each>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-10-3 comment="false" id="0" x="0" y="0"/>
+</length-list>
+<int id="1" val="0"/>
+</more>
+</if>
+<comment-short comment="false" x="26" y="634">
+<int id="0" val="If we get here and detect a bottom collision, we&amp;#039;re on the ground"/>
+</comment-short>
+<collision-foreach comment="false" x="26" y="654">
+<group id="-1">
+<set-val-10-4 comment="false" x="37" y="674">
+                            <collision-ny comment="false" id="0" x="0" y="0"/>
+                        </set-val-10-4>
+<if comment="false" x="37" y="699">
+<group id="-1">
+<set-val-10-4 comment="false" x="48" y="724">
+                                    <neg comment="false" id="0" x="0" y="0">
+<get-val-10-4 comment="false" id="0" x="0" y="0"/>
+</neg>
+                                </set-val-10-4>
+</group>
+<collision-isthis2 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="766">
+<group id="-1">
+<set-val-10-1 comment="false" x="48" y="796">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-10-1>
+<stop comment="false" x="48" y="821"/>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-10-4 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0.1"/>
+</more>
+</if>
+</group>
+</collision-foreach>
+<if comment="false" x="26" y="865">
+<group id="-1">
+<set-val-10-1 comment="false" x="37" y="898">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-10-1>
+<stop comment="false" x="37" y="923"/>
+</group>
+<collision-bottom comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-bottom>
+</if>
+</group>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="983">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>
