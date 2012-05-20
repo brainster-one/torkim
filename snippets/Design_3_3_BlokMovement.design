@@ -9,7 +9,7 @@
                 <set-dxy comment="false" x="26" y="60">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="-2"/>
+                    <int id="2" val="-6"/>
                 </set-dxy>
             </group>
         </step>

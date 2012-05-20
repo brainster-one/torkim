@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <scene depth="1" desc="" eventsnippetid="4" format="1.0" gravx="-0.0" gravy="20.0" height="384" id="0" name="First Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
-        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+        <layer color="100,168,234" id="0" name="Layer 0" order="1"/>
     </layers>
     <color-bg blue="255" green="255" red="255"/>
     <backgrounds/>
     <foregrounds/>
     <joints/>
-    <regions/>
+    <regions>
+        <region b="64" g="64" h="381" id="0" name="Falling Blocks Region" pts="4,92.0,0.0,92.0,381.0,0.0,381.0,0.0,0.0" r="64" type="box" w="92" x="2" y="1"/>
+    </regions>
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="0" sx="1.0" sy="1.0" x="31" y="237" z="0"/>
@@ -18,6 +20,19 @@
         <actor a="0.0" aid="6" c="false" group="1" id="2" sx="1.0" sy="1.0" x="51" y="273" z="0"/>
         <actor a="0.0" aid="7" c="false" group="1" id="2" sx="1.0" sy="1.0" x="83" y="273" z="0"/>
     </actors>
-    <snippets/>
+    <snippets>
+        <s enabled="true" id="6">
+            <prop id="1" list="0" val="2"/>
+            <prop id="2" list="0" val="0"/>
+            <prop id="3" list="0" val="7"/>
+        </s>
+        <s enabled="true" id="7">
+            <prop id="1" list="0" val="2"/>
+            <prop id="2" list="0" val="-5"/>
+        </s>
+        <s enabled="true" id="8">
+            <prop id="1" list="0" val="2"/>
+        </s>
+    </snippets>
     <terrain/>
 </scene>
