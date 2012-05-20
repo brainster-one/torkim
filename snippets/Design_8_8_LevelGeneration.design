@@ -3,9 +3,37 @@
     <group eventID="1" id="0">
         <event-periodic comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <create-actor3 comment="false" x="26" y="40">
+                <set-val-8-3 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </set-val-8-3>
+                <actors-of-type3 comment="false" x="26" y="60">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="92">
+                            <group eventID="1" id="-1">
+                                <set-val-8-3 comment="false" x="48" y="135">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                </set-val-8-3>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-8-3 comment="false" id="1" x="0" y="0"/>
+                            </more>
+                        </if>
+                    </group>
                     <ACTORTYPE eid="var" id="0" vid="1"/>
-                    <int id="1" val="100"/>
+                </actors-of-type3>
+                <create-actor3 comment="false" x="26" y="197">
+                    <ACTORTYPE eid="var" id="0" vid="1"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="32"/>
+                    </plus>
                     <int id="2" val="100"/>
                     <int id="3" val="0"/>
                 </create-actor3>
