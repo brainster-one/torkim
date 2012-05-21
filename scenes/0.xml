@@ -8,7 +8,7 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="381" id="0" name="Falling Blocks Region" pts="4,92.0,0.0,92.0,381.0,0.0,381.0,0.0,0.0" r="64" type="box" w="92" x="2" y="1"/>
+        <region b="64" g="64" h="381" id="0" name="Falling Blocks Region" pts="4,0.0,0.0,0.0,381.0,92.0,381.0,92.0,0.0" r="64" type="box" w="92" x="2" y="1"/>
     </regions>
     <terrainRegions/>
     <actors>
@@ -27,6 +27,8 @@
         </s>
         <s enabled="true" id="8">
             <prop id="1" list="0" val="2"/>
+            <prop id="3" list="0" val="0"/>
+            <prop id="4" list="0" val="0"/>
         </s>
     </snippets>
     <terrain/>

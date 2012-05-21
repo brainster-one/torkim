@@ -53,4 +53,15 @@
             <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_9_9_HeroJump" desc="" description="" design="true" drawOrder="0" id="9" language="" name="Hero Jump" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actortype default="" desc="" dropdown="" fullname="Block Type" hidden="false" id="1" name="_BlockType" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="On Ground?" hidden="true" id="2" name="_OnGround" order="2"/>
+        <control default="" desc="" dropdown="" fullname="Jump Key" hidden="false" id="3" name="_JumpKey" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
+        </events>
+    </snippet>
 </pack>

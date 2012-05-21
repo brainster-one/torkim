@@ -17,6 +17,21 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="0" fixedrot="true" fric="0.2" gid="3" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Hero" oid="-1" pausable="true" rest="0.0" shared="false" sprite="1" static="false" touchable="true">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="9">
+                <prop id="1" list="0" val="2"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="3" list="0" val="Jump"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
+    <custom-block blocktag="custom-4" blocktype="ACTION" code="~.say(&quot;Jumping Simple&quot;, &quot;RemoveTint&quot;);" desc="" global="false" gui="Remove Tint over %0 seconds" id="4" message="RemoveTint" name="RemoveTint" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="FadeTime" order="0" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-5" blocktype="ACTION" code="~.say(&quot;Jumping Simple&quot;, &quot;TintScreen&quot;, ~,~);" desc="" global="false" gui="Tint screen with color %0 with opacity %1 over %2 seconds" id="5" message="TintScreen" name="TintScreen" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="TintColor" order="0" type="COLOR"/>
+        <blank name="TintOpacity" order="1" type="NUMBER"/>
+        <blank name="TintTime" order="2" type="NUMBER"/>
+    </custom-block>
 </pack>

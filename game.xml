@@ -4,10 +4,16 @@
         <group desc="" id="0" name="Collisions" type="snippet">
             <r id="10"/>
         </group>
+        <group desc="" id="1" name="Motion" type="snippet">
+            <r id="10"/>
+            <r id="11"/>
+        </group>
     </folders>
     <packs/>
     <groups/>
     <cgroups>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="1" g2="3"/>
         <cgroup g1="3" g2="3"/>
     </cgroups>
     <input>

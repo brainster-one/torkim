@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="2" id="-1">
+                        <set-dxy comment="false" x="37" y="85">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="-10"/>
+                        </set-dxy>
+                        <dolater comment="false" x="37" y="112">
+                            <group eventID="2" id="-1">
+                                <actor-set-prop comment="false" x="48" y="139">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-9-2 comment="false" id="1" x="0" y="0"/>
+                                    <false comment="false" id="2" x="0" y="0"/>
+                                </actor-set-prop>
+                            </group>
+                            <int id="0" val="0.075"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <actor-get-prop comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-9-2 comment="false" id="1" x="0" y="0"/>
+                        </actor-get-prop>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+            <CONTROL eid="var" id="0" vid="3"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <collision-foreach comment="false" x="26" y="47">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="37" y="67">
+                            <group eventID="3" id="-1">
+                                <actor-set-prop comment="false" x="48" y="105">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-9-2 comment="false" id="1" x="0" y="0"/>
+                                    <true comment="false" id="2" x="0" y="0"/>
+                                </actor-set-prop>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <collision-xynxy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="3"/>
+                                </collision-xynxy>
+                                <int id="1" val="0.1"/>
+                            </moreeq>
+                        </if>
+                    </group>
+                </collision-foreach>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE eid="var" id="1" vid="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>
