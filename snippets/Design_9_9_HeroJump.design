@@ -8,7 +8,7 @@
                         <set-dxy comment="false" x="37" y="85">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="1"/>
-                            <int id="2" val="-10"/>
+                            <int id="2" val="-15"/>
                         </set-dxy>
                         <dolater comment="false" x="37" y="112">
                             <group eventID="2" id="-1">
