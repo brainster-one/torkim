@@ -42,18 +42,51 @@
                     </group>
                     <ACTORTYPE eid="var" id="0" vid="1"/>
                 </actors-of-type3>
-                <create-actor3 comment="false" x="26" y="277">
-                    <ACTORTYPE eid="var" id="0" vid="1"/>
-                    <plus comment="false" id="1" x="0" y="0">
+                <print comment="false" x="26" y="277">
+                    <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                </print>
+                <comment-short comment="false" x="26" y="302">
+                    <int id="0" val="Add blocks to the end of the level"/>
+                </comment-short>
+                <while comment="false" x="26" y="322">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="37" y="365">
+                            <ACTORTYPE eid="var" id="0" vid="1"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="32"/>
+                            </plus>
+                            <get-val-8-4 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-8-3 comment="false" x="37" y="402">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="32"/>
+                            </plus>
+                        </set-val-8-3>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
                         <get-val-8-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="32"/>
-                    </plus>
-                    <get-val-8-4 comment="false" id="2" x="0" y="0"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="64"/>
+                        </minus>
+                    </less>
+                </while>
             </group>
             <int id="0" val="1"/>
         </event-periodic>
+    </group>
+    <group eventID="1" id="1">
+        <create-recycled-actor comment="true" x="254" y="484">
+            <get-val-8-1 comment="true" id="0" x="0" y="0"/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+            <int id="3" val="0"/>
+        </create-recycled-actor>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">

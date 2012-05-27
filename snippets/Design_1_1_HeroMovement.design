@@ -1,43 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="2" id="0">
-        <step comment="false" x="15" y="15">
+        <step comment="false" x="14" y="12">
             <group eventID="2" id="-1">
-                <if comment="false" x="26" y="40">
+                <if comment="false" x="25" y="37">
                     <group eventID="2" id="-1">
-                        <set-dxy comment="false" x="37" y="73">
+                        <push-shove comment="false" x="36" y="70">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="10"/>
-                        </set-dxy>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val=".5"/>
+                        </push-shove>
+                        <actor-set-prop comment="false" x="36" y="97">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-1-3 comment="false" id="1" x="0" y="0"/>
+                            <true comment="false" id="2" x="0" y="0"/>
+                        </actor-set-prop>
                     </group>
                     <keystate comment="false" id="0" x="0" y="0">
                         <int id="0" val="0"/>
                         <CONTROL eid="3" id="1"/>
                     </keystate>
                 </if>
-                <else-if comment="false" x="26" y="112">
+                <else-if comment="false" x="25" y="141">
                     <group eventID="2" id="-1">
-                        <set-dxy comment="false" x="37" y="145">
+                        <push-shove comment="false" x="36" y="174">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="-10"/>
-                        </set-dxy>
+                            <int id="1" val="1"/>
+                            <int id="2" val="-1"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val=".5"/>
+                        </push-shove>
+                        <actor-set-prop comment="false" x="36" y="201">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-1-2 comment="false" id="1" x="0" y="0"/>
+                            <true comment="false" id="2" x="0" y="0"/>
+                        </actor-set-prop>
                     </group>
                     <keystate comment="false" id="0" x="0" y="0">
                         <int id="0" val="0"/>
                         <CONTROL eid="2" id="1"/>
                     </keystate>
                 </else-if>
-                <else comment="false" x="26" y="184">
+                <else comment="false" x="25" y="245">
                     <group eventID="2" id="-1">
-                        <set-dxy comment="false" x="37" y="204">
+                        <actor-set-prop comment="false" x="36" y="265">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="0"/>
-                        </set-dxy>
+                            <get-val-1-3 comment="false" id="1" x="0" y="0"/>
+                            <false comment="false" id="2" x="0" y="0"/>
+                        </actor-set-prop>
+                        <actor-set-prop comment="false" x="36" y="297">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-1-2 comment="false" id="1" x="0" y="0"/>
+                            <false comment="false" id="2" x="0" y="0"/>
+                        </actor-set-prop>
                     </group>
                 </else>
+                <if comment="false" x="25" y="341">
+                    <group eventID="2" id="-1">
+                        <set-dxy comment="false" x="36" y="379">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="30"/>
+                        </set-dxy>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <int id="1" val="30"/>
+                    </moreeq>
+                </if>
             </group>
         </step>
     </group>

@@ -21,7 +21,13 @@
                                     <actor-entered-exited comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                 </get-dxy>
-                                <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <int id="1" val="2"/>
+                                    </randint>
+                                    <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                </times>
                             </plus>
                         </set-dxy>
                     </group>

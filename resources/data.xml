@@ -8,15 +8,16 @@
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="1" id="2" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Block" oid="-1" pausable="true" rest="0.0" shared="false" sprite="3" static="false" touchable="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="false" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="1" id="2" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="100.0" name="Block" oid="-1" pausable="true" rest="0.0" shared="false" sprite="3" static="false" touchable="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="32" id="1" name="Hero" shared="false" width="32">
         <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="0" loop="true" name="Idle" numframes="1" originx="16" originy="32" width="32">
-            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="0" id="0" name="Idle" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="0" id="0" name="Box" rest="0.0" sensor="false"/>
+            <poly data="4,16,5,37,5,37,27,16,27" density="0.1" fric="0.2" gid="-1000" id="1" name="right sensor" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="0" fixedrot="true" fric="0.2" gid="3" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Hero" oid="-1" pausable="true" rest="0.0" shared="false" sprite="1" static="false" touchable="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="0" fixedrot="false" fric="0.13" gid="3" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Hero" oid="-1" pausable="true" rest="0.17" shared="false" sprite="1" static="false" touchable="false">
         <snippets>
             <s enabled="true" id="1">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -29,10 +30,10 @@
             </s>
         </snippets>
     </actor>
-    <custom-block blocktag="custom-4" blocktype="ACTION" code="~.say(&quot;Jumping Simple&quot;, &quot;RemoveTint&quot;);" desc="" global="false" gui="Remove Tint over %0 seconds" id="4" message="RemoveTint" name="RemoveTint" oid="-1" return="VOID" shared="false" snippetID="10">
+    <custom-block blocktag="custom-4" blocktype="ACTION" code="~.say(&quot;Jumping Simple&quot;, &quot;RemoveTint&quot;);" desc="" global="false" gui="Remove Tint over %0 seconds" id="4" message="RemoveTint" name="RemoveTint" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="FadeTime" order="0" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-5" blocktype="ACTION" code="~.say(&quot;Jumping Simple&quot;, &quot;TintScreen&quot;, ~,~);" desc="" global="false" gui="Tint screen with color %0 with opacity %1 over %2 seconds" id="5" message="TintScreen" name="TintScreen" oid="-1" return="VOID" shared="false" snippetID="10">
+    <custom-block blocktag="custom-5" blocktype="ACTION" code="~.say(&quot;Jumping Simple&quot;, &quot;TintScreen&quot;, ~,~);" desc="" global="false" gui="Tint screen with color %0 with opacity %1 over %2 seconds" id="5" message="TintScreen" name="TintScreen" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="TintColor" order="0" type="COLOR"/>
         <blank name="TintOpacity" order="1" type="NUMBER"/>
         <blank name="TintTime" order="2" type="NUMBER"/>

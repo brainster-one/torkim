@@ -7,7 +7,9 @@
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_HeroMovement" desc="" description="" design="true" drawOrder="0" id="1" language="" name="Hero Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <number default="0" desc="" dropdown="" fullname="Is Left Button Pressed" hidden="true" id="2" name="_IsLeftButtonPressed" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="Is Right Button Pressed" hidden="false" id="3" name="_IsRightButtonPressed" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
@@ -60,7 +62,7 @@
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
-            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
+            <event displayName="Keyboard" enabled="false" id="2" name="event-key-press-release" order="2" repeats="true"/>
             <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
         </events>
     </snippet>
